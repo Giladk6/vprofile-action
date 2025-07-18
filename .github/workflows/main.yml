@@ -1,6 +1,7 @@
 name: vprofile actions
 # Manual Triggering
 on: workflow_dispatch
+
 # Push Triggering
 #on:
 #  push:
