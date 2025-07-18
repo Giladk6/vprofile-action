@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: vprodb
-        image: vprofile/vprofiledb 
-        ports:
+        image: koreng24/vprodb
+          ports:
         - name: vprodb-port
           containerPort: 3306
         env: 
