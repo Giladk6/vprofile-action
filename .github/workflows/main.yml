@@ -14,7 +14,7 @@ on: workflow_dispatch
 env:
   AWS_REGION: il-central-1
   ECR_REPOSITORY: vprofileapp
-  EKS_CLUSTER: vprofile-eks
+  EKS_CLUSTER: vpro-eks
 
 jobs:
   Testing:
