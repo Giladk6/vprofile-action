@@ -42,7 +42,7 @@ jobs:
 
 
       # Run sonar-scanner
-      - name: SonarQube Scan
+      - name: SonarQubeScan
         run: |
           sonar-scanner \
             -Dsonar.host.url=${{ secrets.SONAR_URL }} \
@@ -57,7 +57,6 @@ jobs:
 
       # Check the Quality Gate status.
       - name: SonarQube Quality Gate check
-        if: github.ref == 'refs/heads/main'
         id: sonarqube-quality-gate-check
         uses: sonarsource/sonarqube-quality-gate-action@master
         # Force to fail step after specific time.
